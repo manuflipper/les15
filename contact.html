@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Contactformulier</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta name="description" content="Contact">
+    <meta name="keywords" content="Contactformulier">
+</head>
+
+<body>
+    <div class="hoofdcontainer">
+        <header>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mijncv.html">Mijn CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <h2 class="text_center">Contactformulier</h2>
+        <p class="text_center">Graag invullen aub!</p>
+        <div class="form-container">
+            <form id="Contactformulier" action="https://formspree.io/f/xgvoadkw" method="post"></form>
+            <label for="voornaam" class="labelverbergen">Voornaam:</label><input id="voornaam" type="text"
+                name="voornaam" placeholder="Voornaam">
+            <label for="achternaam" class="labelverbergen">Achternaam:</label><input id="achternaam" type="text"
+                name="achternaam" placeholder="Achternaam">
+            <label for="email" class="labelverbergen">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Email">
+            <label for="bericht" class="labelverbergen">Bericht:</label>
+            <textarea name="bericht" maxlength="1500" placeholder="Bericht"></textarea>
+            <label for="reden_contact" class="labelverbergen">Waarom zoek je contact?</label>
+            <select name="reden contact">
+                <option value="" disabled selected>Waarom zoek je contact?</option>
+                <option value="Geen idee">Geen idee</option>
+                <option value="Verveling">Verveelde me</option>
+            </select>
+            <input type="submit" value="Verzend">
+            </form>
+        </div>
+        <footer>Manu©</footer>
+    </div>
+</body>
+
+</html>

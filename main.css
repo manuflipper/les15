@@ -1,0 +1,186 @@
+/*Algemene onderdelen*/
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+html {
+  background-color: black;
+}
+
+h2 {
+  background-color: rgb(62, 80, 126);
+  color: white;
+  font-family: monospace, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid rgb(92, 94, 98);
+  border-radius: 4px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+
+p.text_center {
+  text-align: center;
+}
+
+body {
+  font-family: 'Electrolize', sans-serif;
+  background-color: rgb(36, 36, 36);
+  color: rgb(144, 173, 215);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.hoofdcontainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  width: 75%;
+  margin: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 5px;
+}
+
+footer {
+  padding: 5px;
+  background-color: rgb(35, 51, 94);
+}
+
+/*Navigatiebalk*/
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.header ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  height: 44px;
+  width: 200px;
+  padding: 24px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  border: 1px solid rgb(60, 69, 92);
+  border-radius: 5px;
+  background-color: rgb(26, 31, 44);
+}
+
+li:hover {
+  background-color: rgb(56, 67, 94);
+  border-style: none;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*Tabel onderdelen*/
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid rgb(58, 60, 64);
+  padding: 10px;
+  background-color: rgb(51, 51, 51);
+}
+
+th {
+  background-color: rgb(26, 31, 44);
+}
+
+/*Formulier onderdelen*/
+
+.form-container { /*div container voor centrereren binnen de hoofdcontainer*/
+  width: 420px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select,
+input[type="submit"] {
+  display: block;
+  margin: 15px 0px;
+  width: 420px;
+  background-color: rgb(225, 240, 254);
+  border: 1px solid rgb(58, 60, 64);
+  padding: 5px;
+  box-sizing: border-box;
+  /*Niet uit lessen maar uit https://www.w3schools.com/css/css3_box-sizing.asp voor padding met width samenvoegen */
+  box-shadow: 0 0px 5px 0px rgb(181, 179, 179);
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Electrolize', sans-serif;
+  color: rgb(70, 84, 103);
+}
+
+select {
+  font-family: 'Electrolize', sans-serif;
+  width: 420px;
+  box-sizing: border-box;
+  /*Niet uit lessen maar uit https://www.w3schools.com/css/css3_box-sizing.asp voor padding met width samenvoegen */
+  color: rgb(70, 84, 103);
+  background-color: rgb(225, 240, 254);
+  border: 1px solid rgb(58, 60, 64);
+  padding: 5px;
+}
+
+button,
+input[type="submit"] {
+  background-color: rgb(26, 31, 44);
+  color: white;
+  width: 420px;
+  box-sizing: border-box;
+  /*Niet uit lessen maar uit https://www.w3schools.com/css/css3_box-sizing.asp voor padding met width samenvoegen */
+  border: 1px solid rgb(58, 60, 64);
+  padding: 5px;
+  box-shadow: 0px 0px 1px 1px rgb(60, 69, 92);
+  cursor: pointer;
+}
+
+button:active,
+input[type="submit"]:active {
+  background-color: rgb(20, 25, 38);
+  box-shadow: 0px 0px 3px 0px rgb(150, 148, 148);
+}
+
+/* labels gebruiken voor toegankelijkheid maar wel verbergen */
+/*bron was https://www.w3.org/WAI/tutorials/forms/labels/#hiding-the-label-element */
+.labelverbergen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
