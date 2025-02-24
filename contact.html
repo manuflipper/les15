@@ -21,7 +21,7 @@
         <h2 class="text_center">Contactformulier</h2>
         <p class="text_center">Graag invullen aub!</p>
         <div class="form-container">
-            <form id="Contactformulier" action="https://formspree.io/f/xgvoadkw" method="post"></form>
+            <form id="Contactformulier" action="https://formspree.io/f/xgvoadkw" method="post">
             <label for="voornaam" class="labelverbergen">Voornaam:</label><input id="voornaam" type="text"
                 name="voornaam" placeholder="Voornaam">
             <label for="achternaam" class="labelverbergen">Achternaam:</label><input id="achternaam" type="text"
@@ -29,9 +29,9 @@
             <label for="email" class="labelverbergen">Email:</label>
             <input id="email" type="email" name="email" placeholder="Email">
             <label for="bericht" class="labelverbergen">Bericht:</label>
-            <textarea name="bericht" maxlength="1500" placeholder="Bericht"></textarea>
+            <textarea name="bericht" id="bericht" maxlength="1500" placeholder="Bericht"></textarea>
             <label for="reden_contact" class="labelverbergen">Waarom zoek je contact?</label>
-            <select name="reden contact">
+            <select name="reden_contact">
                 <option value="" disabled selected>Waarom zoek je contact?</option>
                 <option value="Geen idee">Geen idee</option>
                 <option value="Verveling">Verveelde me</option>
